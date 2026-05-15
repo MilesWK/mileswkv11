@@ -4,9 +4,92 @@ body {
       font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
-.header {
-    padding: 20px;
+body, html {
+    padding: 0;
+    margin: 0;
 }
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(121, 121, 121);
+    margin: 0;
+    font-family: monospace;
+    font-size: 14px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.navbar-link {
+    color: rgb(121, 121, 121);
+    text-decoration: none;
+    
+}
+
+.links {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    
+}
+
+.top-link {
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    color: black;
+    border: 2px black dotted;
+    border-radius: 100px;
+    margin: 0px 10px;
+    transition: transform 0.2s ease-in-out
+}
+
+.top-link:hover {
+    transform: rotate(45deg) scale(1.2)
+}
+
+.fullname {
+    font-weight: bold;
+    padding: 3px;
+}
+.hoverflip{
+    transform: rotateY(0deg);
+    transition: transform 0.7s ease-in-out;
+    padding: 3px;
+}
+
+.hoverflip:hover {
+    transform: rotateY(180deg);
+
+}
+
+.flip:hover {
+    transform: rotateY(360deg);
+}
+
+.flip {
+    padding: 3px;
+    transform: rotateY(180deg);
+    transition: transform 0.7s ease-in-out;
+}
+
+.headercontainer {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 14px 30px;
+    border-bottom: 2px dashed black;
+}
+
+.portrait {
+    border: 1px black dashed;
+    padding: 30px;
+    border-radius: 100px;
+}
+
+
 
 .mainhead, .subhead {
     margin: 10px;
@@ -18,5 +101,6 @@ body {
 
 .mainhead {
     font-size: 40px;
-    font-weight: 800;
+    font-family: monospace;
+    font-weight: 800
 }
