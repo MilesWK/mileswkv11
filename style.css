@@ -126,3 +126,42 @@ body, html {
     font-weight: bold;
     color: rgb(121, 121, 121);
 }
+
+.project {
+    margin: 10px;
+    border: 1px rgb(121, 121, 121) solid;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
+    transition: 0.4s ease all
+}
+
+.project:hover {
+    background-color: #f0f0f0;
+}
+
+.text {
+    padding: 0;
+}
+
+.project h1 {
+    font-family: monospace;
+}
+
+.project h1, .project p {
+    margin: 10px;
+}
+
+.jonahimage {
+    background-image: url("assets/jonahicon.png");
+    padding: 50px;
+    background-size: 100%;
+    background-size: cover;
+}
+
+.nospeciallink {
+    color: black;
+    text-decoration: none;
+}
