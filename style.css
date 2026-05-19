@@ -135,7 +135,8 @@ body, html {
     justify-content: space-between;
     display: flex;
     padding: 10px;
-    transition: 0.4s ease all
+    transition: 0.4s ease all;
+    max-width: 500px;
 }
 
 .project:hover {
@@ -154,14 +155,27 @@ body, html {
     margin: 10px;
 }
 
-.jonahimage {
-    background-image: url("assets/jonahicon.png");
+.projectimg {
     padding: 50px;
     background-size: 100%;
     background-size: cover;
+    border: 2px black solid;
+    border-radius: 50px;;
 }
+
+.jonah {background-image: url("assets/jonahicon.png");}
+.hexee {background-image: url("assets/hexeeicon.png");}
 
 .nospeciallink {
     color: black;
     text-decoration: none;
+}
+
+.rightaligntext {
+    text-align: right;
+}
+
+.projectright {
+    display: flex;
+    justify-content: right;
 }
