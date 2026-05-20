@@ -2,11 +2,40 @@
 
 body {
       font-family: "M PLUS Rounded 1c", sans-serif;
+      margin: 0;
+      height: 100vh;
+      cursor: none; 
+      
 }
 
 body, html {
     padding: 0;
     margin: 0;
+    
+    
+}
+
+#mousey {
+    position: fixed;
+    border-radius: 100px;
+    align-items: center;
+    display: inline-block;
+    justify-content: center;
+    border: 2px black solid;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    z-index: 999;
+    height: 20px;
+    background-color: black;
+    backdrop-filter: invert(100%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+
+}
+
+#mousey.hover {
+    width: 60px;
+    height: 60px;
 }
 
 .navbar {
@@ -178,4 +207,8 @@ body, html {
 .projectright {
     display: flex;
     justify-content: right;
+}
+
+.hoverable {
+    cursor: none;
 }
