@@ -5,16 +5,14 @@ body {
     margin: 0;
     height: 100vh;
 
-}
-
-body,
-html {
-    padding: 0;
-    margin: 0;
-
 
 }
 
+
+.contentasidefrommouse {
+
+    padding: 0px 100px;
+}
 #mousey {
     position: fixed;
     border-radius: 100px;
