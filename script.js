@@ -20,6 +20,7 @@ document.querySelectorAll('.hoverable').forEach((el) => {
             duration: 0.2,
             ease: 'back.out',
         });
+        cursor.classList.add('hover')
     });
 
     el.addEventListener('mouseleave', () => {
@@ -28,6 +29,7 @@ document.querySelectorAll('.hoverable').forEach((el) => {
              duration: 0.2,
             ease: 'back.out',
         });
+        cursor.classList.remove('hover')
     });
 
 });

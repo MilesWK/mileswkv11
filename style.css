@@ -4,7 +4,6 @@ body {
     font-family: "M PLUS Rounded 1c", sans-serif;
     margin: 0;
     height: 100vh;
-    cursor: none;
 
 }
 
@@ -27,16 +26,24 @@ html {
     width: 20px;
     z-index: 999;
     height: 20px;
-    background-color: black;
-    backdrop-filter: invert(100%);
     pointer-events: none;
     mix-blend-mode: difference;
+    transition: background-color 0.4s ease-in-out, backdrop-filter 0.4s ease-in-out,
 
 }
 
 #mousey.hover {
-    width: 60px;
-    height: 60px;
+    z-index: 999;
+    background-color: black;
+    backdrop-filter: invert(100%);
+}
+
+.smallthing {
+    font-family: monospace;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(121, 121, 121);
 }
 
 .navbar {
@@ -155,15 +162,15 @@ html {
     background-color: lightblue;
 }
 
-.smallthing {
-    font-family: monospace;
-    margin: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    color: rgb(121, 121, 121);
-}
+
+
+
+/* --------------------- */
+/* Project Panel Styling */
+/* --------------------- */
 
 .project {
+    z-index: -1;
     margin: 10px;
     border: 1px rgb(121, 121, 121) solid;
     border-radius: 12px;
@@ -173,6 +180,12 @@ html {
     padding: 10px;
     transition: 0.4s ease all;
     width: 500px;
+}
+
+.projectright {
+    display: flex;
+    justify-content: right;
+    align-items: right;
 }
 
 .project:hover {
@@ -198,8 +211,8 @@ html {
     background-size: cover;
     border: 2px black solid;
     border-radius: 50px;
-    ;
 }
+
 
 .jonah {
     background-image: url("assets/jonahicon.png");
@@ -218,11 +231,6 @@ html {
 
 .rightaligntext {
     text-align: right;
-}
-
-.projectright {
-    display: flex;
-    justify-content: right;
 }
 
 .hoverable {
