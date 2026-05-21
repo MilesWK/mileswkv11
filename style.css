@@ -11,21 +11,18 @@ body {
 
 .contentasidefrommouse {
 
-    padding: 0px 100px;
+    padding: 0px 20%;
 }
 #mousey {
     position: fixed;
     border-radius: 100px;
-    align-items: center;
-    display: inline-block;
     justify-content: center;
     border: 2px black solid;
     transform: translate(-50%, -50%);
     width: 20px;
-    z-index: 999;
+    z-index: 999 !important;
     height: 20px;
     pointer-events: none;
-    mix-blend-mode: difference;
     transition: background-color 0.4s ease-in-out, backdrop-filter 0.4s ease-in-out,
 
 }
@@ -34,6 +31,7 @@ body {
     z-index: 999;
     background-color: black;
     backdrop-filter: invert(100%);
+    mix-blend-mode: difference;
 }
 
 .smallthing {
@@ -177,7 +175,6 @@ body {
     display: flex;
     padding: 10px;
     transition: 0.4s ease all;
-    width: 500px;
 }
 
 .projectright {
@@ -222,13 +219,16 @@ body {
 
 .nospeciallink {
     color: black;
-    text-decoration: none;
 
 
 }
 
 .rightaligntext {
     text-align: right;
+}
+
+.centeraligntext {
+    text-align: center;
 }
 
 .hoverable {
