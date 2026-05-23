@@ -4,20 +4,32 @@ body {
     font-family: "M PLUS Rounded 1c", sans-serif;
     margin: 0;
     height: 100vh;
-
-
+    background-color: var(--main-back);
+    transition: all 1s ease-in-out;
 }
 
+.light {
+    --main-contrast: black;
+    --main-back: white;
+    --accent: rgb(121, 121, 121);
+    --projectbackground: #f0f0f0;
+}
+
+.dark {
+    --main-contrast: white;
+    --main-back: black;
+    --accent: rgb(175, 175, 175);
+    --projectbackground: #0a0a0a;
+}
 
 .contentasidefrommouse {
-
     padding: 0px 20%;
 }
 #mousey {
     position: fixed;
     border-radius: 100px;
     justify-content: center;
-    border: 2px black solid;
+    border: 2px var(--main-contrast) solid;
     transform: translate(-50%, -50%);
     width: 20px;
     z-index: 999 !important;
@@ -30,6 +42,7 @@ body {
 #mousey.hover {
     z-index: 999;
     background-color: black;
+    border: 2px black solid;
     backdrop-filter: invert(100%);
     mix-blend-mode: difference;
 }
@@ -39,14 +52,14 @@ body {
     margin: 10px;
     font-size: 14px;
     font-weight: bold;
-    color: rgb(121, 121, 121);
+    color: var(--accent);
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: rgb(121, 121, 121);
+    color: var(--accent);
     margin: 0;
     font-family: monospace;
     font-size: 14px;
@@ -55,7 +68,7 @@ body {
 }
 
 .navbar-link {
-    color: rgb(121, 121, 121);
+    color: var(--accent);
     text-decoration: none;
 
 }
@@ -72,8 +85,8 @@ body {
     padding: 10px;
     width: 20px;
     height: 20px;
-    color: black;
-    border: 2px black dotted;
+    color: var(--main-contrast);
+    border: 2px var(--main-contrast) dotted;
     border-radius: 100px;
     margin: 0px 10px;
     transition: transform 0.2s ease-in-out
@@ -113,11 +126,11 @@ body {
     display: flex;
     align-items: center;
     padding: 14px 30px;
-    border-bottom: 2px dashed black;
+    border-bottom: 2px dashed var(--main-contrast);
 }
 
 .portrait {
-    border: 1px black dashed;
+    border: 1px var(--main-contrast) dashed;
     padding: 70px;
     background-size: 100%;
     border-radius: 100px;
@@ -134,6 +147,7 @@ body {
 .mainhead,
 .subhead {
     margin: 10px;
+    color: var(--main-contrast)
 }
 
 .subhead {
@@ -153,14 +167,35 @@ body {
 .aboutmecontainer {
     margin: 10px;
     padding: 10px;
-    border: 2px black solid;
+    border: 2px var(--main-contrast) solid;
     border-radius: 30px;
     background-color: lightblue;
 }
 
+.themechanger {
+    background: none;
+    border: none;
+    color: var(--accent);
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.themechanger:hover {
+    transform: scale(1.5)
+}
+
+.themechanger:active {
+    transform: scale(0.5)
+}
 
 
+#sun, #moon {
+    fill: var(--main-contrast);
+}
 
+#moon {
+    fill: transparent
+}
 /* --------------------- */
 /* Project Panel Styling */
 /* --------------------- */
@@ -175,6 +210,7 @@ body {
     display: flex;
     padding: 10px;
     transition: 0.4s ease all;
+    color: var(--main-contrast)
 }
 
 .projectright {
@@ -184,7 +220,7 @@ body {
 }
 
 .project:hover {
-    background-color: #f0f0f0;
+    background-color: var(--projectbackground);
 }
 
 .text {
@@ -204,7 +240,7 @@ body {
     padding: 50px;
     background-size: 100%;
     background-size: cover;
-    border: 2px black solid;
+    border: 2px var(--main-contrast) solid;
     border-radius: 50px;
 }
 
@@ -218,8 +254,8 @@ body {
 }
 
 .nospeciallink {
-    color: black;
-
+    color: var(--main-contrast);
+    
 
 }
 
