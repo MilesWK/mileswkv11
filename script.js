@@ -2,6 +2,7 @@ const cursor = document.getElementById('mousey');
 const themetoggle = document.getElementById('theme')
 const body = document.getElementById('body')
 const themechangeanimation = gsap.timeline({ paused: true });
+const banner = document.getElementById("banner")
 
 window.addEventListener('mousemove', (e) => {
     gsap.to(cursor, {
@@ -12,6 +13,10 @@ window.addEventListener('mousemove', (e) => {
         ease: "elastic"
     });
 });
+
+let hide_banner = function() {
+    banner.classList.add("hidden")
+}
 
 
 document.querySelectorAll('.hoverable').forEach((el) => {
