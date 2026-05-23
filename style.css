@@ -25,6 +25,7 @@ body {
 .contentasidefrommouse {
     padding: 0px 20%;
 }
+
 #mousey {
     position: fixed;
     border-radius: 100px;

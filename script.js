@@ -7,9 +7,9 @@ window.addEventListener('mousemove', (e) => {
     gsap.to(cursor, {
         x: e.clientX,
         y: e.clientY,
-        duration: 0.5,
+        duration: 1.2,
         stagger: 0.2,
-        ease: "back.out"
+        ease: "elastic"
     });
 });
 
