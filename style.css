@@ -289,6 +289,10 @@ body {
     background-image: url("assets/hexeeicon.png");
 }
 
+.sarcastic {
+    background-image: url("assets/ssicon.png");
+}
+
 .nospeciallink {
     color: var(--main-contrast);
     
@@ -305,4 +309,26 @@ body {
 
 .hoverable {
     cursor: none;
+}
+
+
+/* --------------------- */
+/*         CONTACT       */
+/* --------------------- */
+
+.contactcontainer {
+    justify-content: center;
+    display: flex;
+}
+
+.contactbtn {
+    padding: 10px;
+    border: 2px var(--main-contrast) solid;
+}
+
+.contactlink {
+    width: 50px;
+    font-family: monospace;
+    color: var(--main-contrast);
+    text-decoration: none;
 }
