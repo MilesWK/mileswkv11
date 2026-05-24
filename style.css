@@ -10,8 +10,7 @@ body {
 
 .banner {
     padding: 10px;
-    margin: 10px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: var(--bannerbackground);
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -20,6 +19,7 @@ body {
     z-index: 999;
     color: white;
     width: 100%;
+
     
 }
 
@@ -42,6 +42,8 @@ body {
     --main-back: white;
     --accent: rgb(121, 121, 121);
     --projectbackground: #f0f0f0;
+    --bannerbackground: rgba(0, 0, 0, 0.4);
+   
 }
 
 .dark {
@@ -49,6 +51,8 @@ body {
     --main-back: black;
     --accent: rgb(175, 175, 175);
     --projectbackground: #0a0a0a;
+    --bannerbackground: rgba(223, 223, 223, 0.4);
+
 }
 
 .contentasidefrommouse {
@@ -119,11 +123,12 @@ body {
     border: 2px var(--main-contrast) dotted;
     border-radius: 100px;
     margin: 0px 10px;
-    transition: transform 0.2s ease-in-out
+    transition: transform 0.2s ease-in-out, border-style 0.2s ease-in-out
 }
 
 .top-link:hover {
-    transform: rotate(45deg) scale(1.2)
+    transform: rotate(45deg) scale(1.2);
+    border-style: solid;
 }
 
 .fullname {
@@ -199,7 +204,7 @@ body {
     padding: 10px;
     border: 2px var(--main-contrast) solid;
     border-radius: 30px;
-    background-color: lightblue;
+    color: var(--main-contrast)
 }
 
 .themechanger {
@@ -267,6 +272,7 @@ body {
 }
 
 .projectimg {
+    margin: 10px;
     padding: 50px;
     background-size: 100%;
     background-size: cover;

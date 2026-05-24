@@ -4,6 +4,8 @@ const body = document.getElementById('body')
 const themechangeanimation = gsap.timeline({ paused: true });
 const banner = document.getElementById("banner")
 
+
+
 window.addEventListener('mousemove', (e) => {
     gsap.to(cursor, {
         x: e.clientX,
