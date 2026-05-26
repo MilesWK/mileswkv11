@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;800&display=swap');
 
+.light {
+    --main-contrast: black;
+    --main-back: white;
+    --accent: rgb(121, 121, 121);
+    --projectbackground: #f0f0f0;
+    --bannerbackground: rgba(0, 0, 0, 0.4);
+
+}
+
+.dark {
+    --main-contrast: white;
+    --main-back: black;
+    --accent: rgb(175, 175, 175);
+    --projectbackground: #0a0a0a;
+    --bannerbackground: rgba(223, 223, 223, 0.4);
+
+}
+
+
 body {
     font-family: "M PLUS Rounded 1c", sans-serif;
     margin: 0;
@@ -19,12 +38,11 @@ body {
     z-index: 999;
     color: white;
     width: 100%;
-
-    
 }
 
 .closeout {
-    text-align: center;;
+    text-align: center;
+    ;
     padding: 10px;
     margin-right: 30px;
     cursor: pointer;
@@ -33,30 +51,17 @@ body {
 
 .hidden {
     visibility: hidden;
-    
-}
-
-
-.light {
-    --main-contrast: black;
-    --main-back: white;
-    --accent: rgb(121, 121, 121);
-    --projectbackground: #f0f0f0;
-    --bannerbackground: rgba(0, 0, 0, 0.4);
-   
-}
-
-.dark {
-    --main-contrast: white;
-    --main-back: black;
-    --accent: rgb(175, 175, 175);
-    --projectbackground: #0a0a0a;
-    --bannerbackground: rgba(223, 223, 223, 0.4);
 
 }
 
 .contentasidefrommouse {
     padding: 0px 20%;
+}
+
+@media all and (max-width: 600px) {
+    .contentasidefrommouse {
+        padding: 0px;
+    }
 }
 
 #mousey {
@@ -224,13 +229,15 @@ body {
 }
 
 
-#sun, #moon {
+#sun,
+#moon {
     fill: var(--main-contrast);
 }
 
 #moon {
     fill: transparent
 }
+
 /* --------------------- */
 /* Project Panel Styling */
 /* --------------------- */
@@ -295,7 +302,7 @@ body {
 
 .nospeciallink {
     color: var(--main-contrast);
-    
+
 
 }
 
@@ -331,4 +338,13 @@ body {
     font-family: monospace;
     color: var(--main-contrast);
     text-decoration: none;
+}
+
+footer {
+    border-top: var(--bannerbackground) 2px solid;
+    margin-top: 40px;
+    padding: 30px;
+    text-align: center;
+    font-family: monospace;
+    color: var(--main-contrast)
 }
