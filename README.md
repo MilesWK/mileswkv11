@@ -9,6 +9,11 @@
 * Projects now on-page
 * Contact link + email
 
+**Running Locally:**
+* Download the repository into a zip folder
+* Extract the files in the same place
+* Open `index.html` in your browser!
+
 **Bugs?**
 Please add an issue above! 
 
